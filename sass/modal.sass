@@ -1,0 +1,66 @@
+@use 'varibales'
+
+.modal-center
+    text-align: center
+
+.subModal-header
+    margin: varibales.$subModal-header-margin-top varibales.$subModal-header-margin-right varibales.$subModal-header-margin-bottom varibales.$subModal-header-margin-left 
+    @media screen and ( min-width: 428px)
+        margin: (varibales.$subModal-header-margin-top * 2) (varibales.$subModal-header-margin-right * 2) (varibales.$subModal-header-margin-bottom * 2) (varibales.$subModal-header-margin-left * 2)
+
+.Modal-image
+    margin: varibales.$Modal-image-top-bottom varibales.$Modal-image-right-left
+    background: varibales.$image-background
+    padding: varibales.$Modal-image-padding-top-bottom varibales.$Modal-image-padding-right-left
+    figure
+        margin: 0 auto
+    @media screen and ( min-width: 428px)
+        margin: (varibales.$Modal-image-top-bottom * 2) (varibales.$Modal-image-right-left * 2)
+        padding: (varibales.$Modal-image-padding-top-bottom * 2) (varibales.$Modal-image-padding-right-left * 2)
+        
+
+
+.modal-subComonentImage
+    max-width: 100%
+    height: auto
+    display: block
+    margin: 0 auto
+
+.modal-subComonentCaption
+    margin: varibales.$modal-subComonentCaption 0
+    @media screen and ( min-width: 428 )
+        margin: (varibales.$modal-subComonentCaption * 2) 0
+
+.modal-info
+         width: 50%
+         margin: 0 auto
+                 
+
+.modal-info-text
+    margin: varibales.$modal-info-text-margin-top-bottom varibales.$modal-info-text-margin-right-left
+    @media screen and ( min-width: 428px)
+        margin: (varibales.$modal-info-text-margin-top-bottom * 2) (varibales.$modal-info-text-margin-right-left * 3)
+
+.model-bold
+    font-weight: bold
+
+.modal-subModal-span
+    color: #000
+
+.modal-list-item
+    margin-top:  varibales.$modal-info-ul-li-marginTop
+    line-height: calc(1rem)
+    &:first-child
+        margin-top: 0
+    @media screen and ( min-width: 428px )
+        margin-top:  (varibales.$modal-info-ul-li-marginTop * 2)
+        line-height: 2rem
+        &:first-child
+            margin-top: 0
+.modal-footer-p
+    width: 70%
+    text-align: center
+    a
+        color: blue
+        text-decoration: underline
+        font-weight: bold
